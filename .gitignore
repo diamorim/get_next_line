@@ -53,3 +53,7 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# subject files
+en.subject_get_next_line.pdf
+plan.md
