@@ -6,7 +6,7 @@
 /*   By: damorim- <damorim-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 04:21:40 by damorim-          #+#    #+#             */
-/*   Updated: 2026/08/05 04:21:46 by damorim-         ###   ########.fr       */
+/*   Updated: 2026/08/05 05:45:56 by damorim-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,7 @@ char	*next_stash(char *stash)
 	size_t	j;
 
 	i = 0;
+	j = 0;
 	while (stash[i] && stash[i] != '\n')
 		i++;
 	if (!stash[i])
@@ -126,7 +127,6 @@ char	*next_stash(char *stash)
 		free(stash);
 		return (NULL);
 	}
-	j = 0;
 	while (stash[i])
 		new_stash[j++] = stash[i++];
 	new_stash[j] = '\0';
